@@ -1,0 +1,191 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body::-webkit-scrollbar{
+    width:7px;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(113, 170, 7, 0.89);
+}
+section{
+     width: 100vw;
+    height:90vh;
+}
+
+.linebreak{
+    width:100vw;
+    height:50vh;
+    /* background-color: red; */
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lni{
+
+color:#33ffe48a;
+font-weight: bolder;
+font-size: 3em;
+}
+
+.cat{
+ width:250px;
+ padding: 20px 30px;
+ text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 15px gray;
+    transition: all .6s ease-in;
+}
+
+.home{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+    background:linear-gradient(45deg,transparent,#000000de) , url(./assets/oahu\ palm\ tree\ phone\ wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:relative;
+}
+
+.home h1{
+    width:40%;
+    font-size: 5em;
+    color:white;
+    letter-spacing: .3em;
+    font-style:italic;
+    font-family: cursive;
+}
+
+.home img{
+    width:30%;
+    height:110%;
+position:absolute;
+top:10%;
+left:90%;
+transform: translate(-90%,-0%);
+}
+
+.about{
+height:max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about h1{
+    color:black;
+    font-size:3em;
+
+}
+
+.about .catalog{
+    width: 100%;
+    height: 80%;
+    /* background-color: red; */
+      display:flex;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.catalog .cat{
+  width:30%;
+  height:40%;
+  /* border:1px solid gray; */
+  background-color: white;
+  transition:all 400ms ease-in;
+
+}
+
+.catalog .cat:hover{
+    transform:scale(1.3);
+    z-index: 100;
+}
+
+.catalog .cat i{
+    color:black;
+}
+
+.fade-out{
+    opacity:0;
+    transform: translateY(50px);
+
+}
+
+.fadeIn{
+    opacity:1;
+    transform: translateY(0px);
+}
+
+.footer{
+    width:100vw;
+    height:50px;
+    background-color: gray;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color:white;
+ 
+}
+
+
+@media screen and (orientation:portrait){
+    body{
+        overflow-x:hidden;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+gap:40px;
+}
+.home h1{
+    width:100%;
+font-size:3em;
+text-align: center;
+}
+
+.linebreak{
+    flex-direction:column;
+    margin-top: 40%;
+    margin-bottom: 30%;
+}
+
+.linebreak .cat{
+    margin-bottom: 2em;
+    
+}
+.catalog{
+    flex-wrap:wrap;
+}
+.catalog .cat{
+   width:250px;
+   height:250px;
+    overflow: hidden;
+}
+
+    .home img{
+   display:none;
+    }
+.footer{
+    font-size: 1em;
+}
+}
