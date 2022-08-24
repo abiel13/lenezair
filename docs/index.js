@@ -2,7 +2,7 @@ function scroll() {
     var cat = document.querySelectorAll('.cat');
     cat.forEach(element => {
         catPosition = element.getBoundingClientRect().top;
-        windowPos = window.innerHeight / 1.3;
+        windowPos = window.innerHeight / 1.1;
 
         if (catPosition < windowPos) {
             element.classList.remove('fade-out')
